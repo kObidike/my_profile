@@ -1,42 +1,97 @@
-<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>My projects</title>
-    <link href="profileStyle.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Karolina Obidike">
+  <meta name="description" content="Data engineering and Python projects by Karolina Obidike.">
+  <title>Projects — Karolina Obidike</title>
+  <link rel="stylesheet" href="profileStyles.css">
+  <script src="script.js" defer></script>
 </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Go to profile</a></li>
-            <li><a href="projects.html">Go to projects</a></li>
-            <li><a href="https://www.linkedin.com/in/peter-bellaby-40b93022b/" target="_blank">My LinkedIn</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h1>Projects</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Project Name</th>
-                    <th>Description</th>
-                    <th>Year</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Agile Project</td>
-                    <td>Did some stuff with user stories</td>
-                    <td>2023</td>
-                </tr>
-                <tr>
-                    <td>Safari Park Project</td>
-                    <td>Demonstrated polymorphism</td>
-                    <td>2023</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+<body class="page-projects">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Karolina Obidike, home"><span>KO<span class="brand-dot">.</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">Profile</a>
+      <a class="nav-link is-active" href="projects.html" aria-current="page">Projects</a>
+      <a class="nav-link nav-external" href="https://www.linkedin.com/in/karolina-obidike-46a3933bb" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+    </nav>
+    <span class="header-index" aria-hidden="true">02 / 02</span>
+  </header>
+
+  <main id="main">
+    <section class="hero hero-projects" aria-labelledby="projects-title">
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-stripes" aria-hidden="true"></div>
+      <img class="hero-dog" src="images/presa-canario-brindle.png" alt="Brindle Presa Canario in the background banner">
+      <div class="hero-content wrap">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span>Selected work <span class="eyebrow-number">/ 002</span></p>
+          <h1 id="projects-title" class="hero-title">My <em>Projects.</em></h1>
+          <p class="hero-subtitle">Data pipelines · Python apps · Product work</p>
+          <a class="button button-cream" href="#project-list">Explore projects <span aria-hidden="true">↘</span></a>
+        </div>
+        <p class="hero-caption"><span class="caption-rule"></span> Public repositories <span class="caption-star" aria-hidden="true">✦</span> Private case study</p>
+      </div>
+      <div class="hero-side-label" aria-hidden="true">BUILD / TEST / LEARN</div>
+    </section>
+
+    <section id="project-list" class="projects-section section-pad wrap" aria-labelledby="list-title">
+      <div class="section-heading projects-heading">
+        <p class="eyebrow eyebrow-dark"><span class="eyebrow-line"></span>01 / The collection</p>
+        <h2 id="list-title">Selected <em>work.</em></h2>
+      </div>
+      <div class="project-list">
+        <a class="project-row" href="https://github.com/kObidike/RoamingRhubarbsTeamProject" target="_blank" rel="noopener noreferrer">
+          <span class="project-number">01 / 04</span>
+          <div class="project-main">
+            <h3>Roaming Rhubarbs ETL Pipeline</h3>
+            <p>A team-built pipeline that extracts and transforms raw data before loading it into Amazon Redshift, with Lambda, S3 and CloudWatch supporting the cloud workflow.</p>
+            <div class="project-tags"><span>Python</span><span>AWS</span><span>Redshift</span><span>ETL</span></div>
+          </div>
+          <span class="project-year">2026</span>
+          <span class="project-cta">View repository <b aria-hidden="true">↗</b></span>
+        </a>
+        <a class="project-row" href="https://github.com/kObidike/Orders-Management-App-Team-Project-with-Database-connection" target="_blank" rel="noopener noreferrer">
+          <span class="project-number">02 / 04</span>
+          <div class="project-main">
+            <h3>Orders Management App</h3>
+            <p>A Python command-line app for managing products, couriers and orders, backed by PostgreSQL with CSV export. Built in a four-person team.</p>
+            <div class="project-tags"><span>Python</span><span>PostgreSQL</span><span>CLI</span><span>Team project</span></div>
+          </div>
+          <span class="project-year">2026</span>
+          <span class="project-cta">View repository <b aria-hidden="true">↗</b></span>
+        </a>
+        <a class="project-row" href="https://github.com/kObidike/User-Management-App-Quick-Solo-Project" target="_blank" rel="noopener noreferrer">
+          <span class="project-number">03 / 04</span>
+          <div class="project-main">
+            <h3>User Management App</h3>
+            <p>A small solo Python project for creating users, changing account status, testing logins and saving data to CSV.</p>
+            <div class="project-tags"><span>Python</span><span>CSV</span><span>CLI</span><span>Solo project</span></div>
+          </div>
+          <span class="project-year">2026</span>
+          <span class="project-cta">View repository <b aria-hidden="true">↗</b></span>
+        </a>
+        <a class="project-row project-row-private" href="nonoise.html">
+          <span class="project-number">04 / 04</span>
+          <div class="project-main">
+            <h3>NoNoise Trading News</h3>
+            <p>A private market-news research product. The case study shows the interface, workflow and product decisions while the application code and scoring logic remain private.</p>
+            <div class="project-tags"><span>Next.js</span><span>TypeScript</span><span>Data research</span><span>Private build</span></div>
+          </div>
+          <span class="project-year">2026</span>
+          <span class="project-cta">View case study <b aria-hidden="true">→</b></span>
+        </a>
+      </div>
+      <p class="projects-footnote">The Generation projects link to their public GitHub repositories. NoNoise is presented as a case study; its source and internal logic are not published.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner"><span class="footer-brand">KO<span>.</span></span><small>Copyright © Sparta Global 2026 <cite>by Karolina Obidike</cite></small><a href="#main">Back to top ↑</a></div>
+  </footer>
 </body>
 </html>

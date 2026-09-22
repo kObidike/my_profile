@@ -1,59 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Karolina Obidike">
-    <meta name="description" content="This is an amazing web page">
-    <title>My Profile</title>
-    <link href="profileStyle.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Karolina Obidike">
+  <meta name="description" content="Karolina Obidike is a Java Consultant at Sparta Global, working as a Junior Java Test Automation Engineer.">
+  <title>Karolina Obidike — Java Test Automation</title>
+  <link rel="stylesheet" href="profileStyles.css">
+  <script src="script.js" defer></script>
 </head>
+<body class="page-profile">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Go to profile</a></li>
-            <li><a href="projects.html">Go to projects</a></li>
-            <li><a href="https://www.linkedin.com/in/karolina-obidike" target="_blank">My LinkedIn</a></li>
-        </ul>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Karolina Obidike, home"><span>KO<span class="brand-dot">.</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="nav-link is-active" href="index.html" aria-current="page">Profile</a>
+      <a class="nav-link" href="projects.html">Projects</a>
+      <a class="nav-link nav-external" href="https://www.linkedin.com/in/karolina-obidike-46a3933bb" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
     </nav>
-    <header>
-        <h1>Karolina Obidike</h1>
-        <h2>My Profile</h2>
-        <img alt="Profile Picture" src="images/profile-pic.jpg">
-    </header>
-    <section>
-        <h4>My Skills</h4>
-        <p>Everything and then some</p>
-    </section>
-    <section>
-        <h4>My Hobbies</h4>
-        <ul>
-            <li>Piano</li>
-            <li>Running</li>
-            <li>Programming</li>
-        </ul>
-    </section>
-    <section>
-        <h4>Goals</h4>
-        <ol>
-            <li>I don't know</li>
-            <li>Finish this course</li>
-            <li>Fly to the moon</li>
-        </ol>
-    </section>
-    <section>
-        <h3>Search for News:</h3>
-        <form action="https://www.bbc.co.uk/search">
-            <label for="mysearch">Search for:</label>
-            <input id="mysearch" type="text" name="q" value="Telford">
-            <input class="button" type="submit" value="Search">
+    <span class="header-index" aria-hidden="true">01 / 02</span>
+  </header>
 
-        </form>
-
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-stripes" aria-hidden="true"></div>
+      <img class="hero-dog" src="images/presa-canario-brindle.png" alt="Brindle Presa Canario leaping into the banner" fetchpriority="high">
+      <div class="hero-content wrap">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span>Java Consultant · Sparta Global <span class="eyebrow-number">/ 001</span></p>
+          <h1 id="hero-title" class="hero-title">Karolina <em>Obidike</em></h1>
+          <p class="hero-subtitle">Junior Java Test Automation Engineer</p>
+          <div class="hero-actions">
+            <a class="button button-cream" href="#about">About me <span aria-hidden="true">↘</span></a>
+            <button class="replay-button" type="button" data-replay>Replay entrance <span aria-hidden="true">↺</span></button>
+          </div>
+        </div>
+        <p class="hero-caption"><span class="caption-rule"></span> Java test automation <span class="caption-star" aria-hidden="true">✦</span> Practical software</p>
+      </div>
+      <div class="hero-side-label" aria-hidden="true">DATA / SYSTEMS / CURIOSITY</div>
     </section>
-    <footer><small>Copyright &#169; Sparta Global 2026 <cite>by Karolina Obidike</cite></small></footer>
+
+    <section id="about" class="about-section section-pad wrap" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="eyebrow eyebrow-dark"><span class="eyebrow-line"></span>01 / Introduction</p>
+        <h2 id="about-title">A little <em>about me.</em></h2>
+      </div>
+      <div class="about-layout">
+        <div class="portrait-composition">
+          <div class="portrait-frame"><img src="images/profile-pic.jpg" alt="Portrait of Karolina Obidike" loading="lazy"></div>
+          <span class="portrait-orbit" aria-hidden="true">K / O</span>
+          <span class="portrait-caption">Portrait / 2026</span>
+        </div>
+        <div class="about-copy">
+          <div class="large-asterisk" aria-hidden="true">✳</div>
+          <p class="kicker">About me</p>
+          <p class="statement">Testing software <em>with Java.</em></p>
+          <p class="edit-note">I’m a Java Consultant at Sparta Global, working as a Junior Java Test Automation Engineer. Before moving into technology, I spent more than seven years in operational roles. I’m also interested in data engineering and have trained in Python, SQL, databases, cloud tools and ETL/ELT workflows.</p>
+          <a class="text-link" href="projects.html">View my projects <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="details-section section-pad" aria-labelledby="details-title">
+      <div class="wrap">
+        <div class="details-heading">
+          <p class="eyebrow"><span class="eyebrow-line"></span>02 / Skills and interests</p>
+          <h2 id="details-title">What I <em>work with.</em></h2>
+        </div>
+        <div class="detail-grid">
+          <section class="detail-card">
+            <div class="card-top"><span>01</span><span aria-hidden="true">✦</span></div>
+            <h3>Technical</h3>
+            <ul class="editorial-list">
+              <li><span>Java &amp; test automation</span><span aria-hidden="true">01</span></li>
+              <li><span>Python, Pandas &amp; NumPy</span><span aria-hidden="true">02</span></li>
+              <li><span>SQL &amp; data modelling</span><span aria-hidden="true">03</span></li>
+              <li><span>PostgreSQL &amp; Snowflake</span><span aria-hidden="true">04</span></li>
+              <li><span>AWS, Docker &amp; Linux</span><span aria-hidden="true">05</span></li>
+              <li><span>Git, testing &amp; Agile</span><span aria-hidden="true">06</span></li>
+            </ul>
+          </section>
+          <section class="detail-card detail-card-light">
+            <div class="card-top"><span>02</span><span aria-hidden="true">✦</span></div>
+            <h3>Interests</h3>
+            <ol class="editorial-list goals-list">
+              <li><span>Cynology &amp; animal welfare</span></li>
+              <li><span>Technology &amp; science</span></li>
+              <li><span>Anthropology &amp; history</span></li>
+              <li><span>Geopolitics</span></li>
+              <li><span>Football</span></li>
+            </ol>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-pad wrap" aria-labelledby="contact-title">
+      <div>
+        <p class="eyebrow eyebrow-dark"><span class="eyebrow-line"></span>03 / Contact</p>
+        <h2 id="contact-title">Let’s <em>connect.</em></h2>
+      </div>
+      <div class="contact-copy">
+        <p>I work in Java test automation and enjoy conversations about testing, data engineering and building reliable systems.</p>
+        <div class="contact-links">
+          <a href="mailto:karolina.obidike@gmail.com"><span>Email</span><strong>karolina.obidike@gmail.com</strong><span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/kObidike" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>kObidike</strong><span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/karolina-obidike-46a3933bb" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><strong>Karolina Obidike</strong><span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner"><span class="footer-brand">KO<span>.</span></span><small>Copyright © Sparta Global 2026 <cite>by Karolina Obidike</cite></small><a href="#main">Back to top ↑</a></div>
+  </footer>
 </body>
-
 </html>
